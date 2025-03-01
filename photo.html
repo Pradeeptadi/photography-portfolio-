@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="hadder">
+        <h1>My Photography Portfolio</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="gallery" class="gallery-container">
+        <div class="carousel">
+            <div class="gallery-item card" style="background-image: url('../frontend/images/img1.jpg');"></div>
+            <div class="gallery-item card" style="background-image: url('../frontend/images/img2.jpg');"></div>
+            <div class="gallery-item card" style="background-image: url('../frontend/images/img3.jpg');"></div>
+            <div class="gallery-item card" style="background-image: url('../frontend/images/img4.jpg');"></div>
+            <div class="gallery-item card" style="background-image: url('../frontend/images/img5.jpg');"></div>
+            <div class="gallery-item card" style="background-image: url('../frontend/images/img1.jpg');"></div>
+            <div class="gallery-item card" style="background-image: url('../frontend/images/img2.jpg');"></div>
+            <div class="gallery-item card" style="background-image: url('../frontend/images/img3.jpg');"></div>
+            <div class="gallery-item card" style="background-image: url('../frontend/images/img4.jpg');"></div>
+            <div class="gallery-item card" style="background-image: url('../frontend/images/img5.jpg');"></div>
+        </div>
+    </section>
+    
+    <section id="photo-info" class="photo-info">
+        <div class="info-text">
+            <h2>What is Photography?</h2>
+            <p>Photography is the art, application, and practice of creating images by recording light. It allows us to capture moments, tell stories, and document history. There are various types of photography, including portrait, landscape, wildlife, and street photography.</p>
+            <p>Mastering photography requires an understanding of composition, lighting, and camera settings. Whether you're an amateur or a professional, photography is a powerful medium for creative expression.</p>
+        </div>
+        <div class="info-image">
+            <img src="../frontend/images/img7.jpg" alt="Photography Art">
+        </div>
+    </section>
+    <fieldset>    
+    <legend><h1>  contact with me   </h1></legend>
+    <section id="about">
+        
+        <p>Welcome to my photography portfolio. I capture the world through my lens, specializing in landscapes, portraits, and urban photography.</p>
+    
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+       <h2> <p>Email me at: contact@example.com</p></h2>
+    </section>
+</fieldset>
+    <footer>
+        <p>Follow me on social media:</p>
+        <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .hadder{
+            background-image: url('../frontend/images/img7.jpg');
+            opacity: o.5;
+        }
+        body {
+            background-image: url('../frontend/images/img6.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: rgba(91, 57, 155, 0.7);
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .gallery-container {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            padding: 20px 0;
+        }
+        .carousel {
+            display: flex;
+            animation: scroll 18s linear infinite;
+        }
+        .gallery-item {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(104, 8, 8, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.1);
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-200%); }
+        }
+        .photo-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            background: rgba(24, 92, 86, 0.8);
+            margin: 20px;
+            border-radius: 15px;
+        }
+        .info-text {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+        .info-image img {
+            width: 300px;
+            border-radius: 10px;
+        }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .social-icons li {
+            display: inline;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ffcc00;
+        }
+    </style>
+</body>
+</html>
